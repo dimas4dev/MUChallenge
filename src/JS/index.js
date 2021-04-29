@@ -16,7 +16,11 @@ function setData(ip, address, postalCode, timezone, isp) {
 
 button.addEventListener("click", async () => {
   const ip = document.getElementById("ip").value;
+  const loading = document.querySelector(".loading");
+  loading.classList.add("show");
   const datos = await fetchData(ip);
+  console.log(loading);
+
   setData(
     datos.ipAddress,
     datos.location,
@@ -26,6 +30,7 @@ button.addEventListener("click", async () => {
   );
 
   setLocation(datos.latitud, datos.longitud);
+  setTimeout(loading.classList.remove("show"), 3000);
 });
 
 async function fetchData(ip) {
