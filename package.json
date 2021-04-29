@@ -1,0 +1,29 @@
+{
+  "name": "muchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": " is part of the interview for the company Mensajeros Urbanos. In this we want to make an Ips tracker",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dimasmendoza/MUChallenge.git"
+  },
+  "keywords": [
+    "Challenge",
+    "MensajerosUrbanos",
+    "JS",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Dimas Mendoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimasmendoza/MUChallenge/issues"
+  },
+  "homepage": "https://github.com/dimasmendoza/MUChallenge#readme",
+  "dependencies": {
+    "sass": "^1.32.11"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <title>MU Challenge</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">IP Address Tracker</h1>
+      <div class="header__input">
+        <input
+          type="text"
+          name=""
+          id="ip"
+          placeholder="Search for any IP address or domain"
+          class="header__input--input"
+        />
+        <div id="buttonAction" class="header__input--button">></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__information">
+        <section class="main__information--center">
+          <div class="main__information--size">
+            <p class="main__information--titleblock">IP ADDRESS</p>
+            <p id="ipAddress">8.8.8.8</p>
+          </div>
+
+          <div class="main__information--size">
+            <p class="main__information--titleblock">LOCATION</p>
+            <p id="location">Mountain View, 94035</p>
+          </div>
+
+          <div class="main__information--size">
+            <p class="main__information--titleblock">TIMEZONE</p>
+            <p id="timezone">UTC -07:00</p>
+          </div>
+
+          <div class="main__information--size none">
+            <p class="main__information--titleblock">ISP</p>
+            <p id="isp">Google LLC</p>
+          </div>
+        </section>
+      </section>
+      <section id="mapid"></section>
+    </main>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="./src/JS/index.js"></script>
+  </body>
+</html>
